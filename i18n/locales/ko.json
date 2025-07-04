@@ -1,0 +1,113 @@
+{
+  "header": {
+    "title": "WebRTC 파일 전송",
+    "subtitle": "P2P 파일 공유 플랫폼",
+    "online": "온라인",
+    "offline": "오프라인"
+  },
+  "peerConnection": {
+    "title": "피어 연결",
+    "subtitle": "P2P 네트워크 관리",
+    "ready": "준비됨",
+    "initializing": "초기화 중",
+    "myPeerId": "내 피어 ID",
+    "generating": "생성 중...",
+    "copy": "복사",
+    "qr": "QR",
+    "copied": "복사됨!",
+    "connectToPeer": "피어 연결하기",
+    "peerIdPlaceholder": "상대방의 피어 ID를 입력하세요",
+    "peerNamePlaceholder": "표시할 이름 (선택사항)",
+    "connect": "연결",
+    "connecting": "연결 중...",
+    "connected": "연결됨",
+    "disconnect": "연결 해제",
+    "connectedPeers": "연결된 피어 목록",
+    "noPeers": "연결된 피어가 없습니다",
+    "status": "상태",
+    "name": "이름",
+    "id": "ID",
+    "actions": "작업",
+    "connectionSuccess": "피어 연결 성공!",
+    "connectionError": "연결 실패:",
+    "disconnectSuccess": "피어 연결 해제됨"
+  },
+  "fileTransfer": {
+    "title": "파일 전송",
+    "subtitle": "안전한 P2P 파일 공유",
+    "selectPeer": "전송할 피어 선택",
+    "noPeersConnected": "연결된 피어가 없습니다",
+    "selectFile": "파일 선택",
+    "dragDrop": "파일을 여기에 드래그하거나 클릭하여 선택하세요",
+    "selectedFile": "선택된 파일",
+    "fileName": "파일명",
+    "fileSize": "크기",
+    "fileType": "유형",
+    "changeFile": "다른 파일 선택",
+    "sendFile": "파일 전송",
+    "sending": "전송 중...",
+    "selectPeerFirst": "먼저 피어를 선택해주세요",
+    "selectFileFirst": "먼저 파일을 선택해주세요"
+  },
+  "fileProgress": {
+    "title": "파일 전송 진행 상황",
+    "subtitle": "실시간 전송 모니터링",
+    "noTransfers": "진행 중인 전송이 없습니다",
+    "receiving": "수신 중",
+    "sending": "전송 중",
+    "completed": "완료됨",
+    "failed": "실패",
+    "from": "보낸이",
+    "to": "받는이",
+    "fileName": "파일명",
+    "progress": "진행률",
+    "status": "상태",
+    "accept": "수락",
+    "reject": "거부",
+    "download": "다운로드",
+    "retry": "재시도"
+  },
+  "guide": {
+    "title": "사용법 가이드",
+    "peerConnection": {
+      "title": "피어 연결",
+      "step1": "내 피어 ID를 상대방에게 공유",
+      "step2": "상대방의 피어 ID와 이름을 입력하여 연결",
+      "step3": "연결이 성공하면 녹색 표시등이 나타남"
+    },
+    "fileTransfer": {
+      "title": "파일 전송",
+      "step1": "연결된 피어를 선택",
+      "step2": "전송할 파일을 선택하거나 드래그 앤 드롭",
+      "step3": "파일 전송 버튼을 클릭",
+      "step4": "상대방이 수락하면 전송 시작"
+    },
+    "notice": {
+      "title": "중요 안내",
+      "content": "방화벽이나 NAT 환경에서는 TURN 서버가 필요할 수 있습니다."
+    }
+  },
+  "footer": {
+    "madeWith": "Made with love using",
+    "experience": "P2P 파일 전송의 새로운 경험을 만나보세요",
+    "writtenBy": "Written by"
+  },
+  "notifications": {
+    "fileRequest": "님이 파일을 보내려고 합니다:",
+    "fileAccepted": "파일 전송이 수락되었습니다",
+    "fileRejected": "파일 전송이 거부되었습니다",
+    "fileCompleted": "파일 전송이 완료되었습니다",
+    "fileFailed": "파일 전송에 실패했습니다"
+  },
+  "common": {
+    "bytes": "바이트",
+    "kb": "KB",
+    "mb": "MB",
+    "gb": "GB",
+    "cancel": "취소",
+    "close": "닫기",
+    "ok": "확인",
+    "yes": "예",
+    "no": "아니오"
+  }
+}

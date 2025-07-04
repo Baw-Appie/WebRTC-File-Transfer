@@ -1,0 +1,113 @@
+{
+  "header": {
+    "title": "WebRTC File Transfer",
+    "subtitle": "P2P File Sharing Platform",
+    "online": "Online",
+    "offline": "Offline"
+  },
+  "peerConnection": {
+    "title": "Peer Connection",
+    "subtitle": "P2P Network Management",
+    "ready": "Ready",
+    "initializing": "Initializing",
+    "myPeerId": "My Peer ID",
+    "generating": "Generating...",
+    "copy": "Copy",
+    "qr": "QR",
+    "copied": "Copied!",
+    "connectToPeer": "Connect to Peer",
+    "peerIdPlaceholder": "Enter peer ID",
+    "peerNamePlaceholder": "Display name (optional)",
+    "connect": "Connect",
+    "connecting": "Connecting...",
+    "connected": "Connected",
+    "disconnect": "Disconnect",
+    "connectedPeers": "Connected Peers",
+    "noPeers": "No peers connected",
+    "status": "Status",
+    "name": "Name",
+    "id": "ID",
+    "actions": "Actions",
+    "connectionSuccess": "Peer connection successful!",
+    "connectionError": "Connection failed:",
+    "disconnectSuccess": "Peer disconnected"
+  },
+  "fileTransfer": {
+    "title": "File Transfer",
+    "subtitle": "Secure P2P File Sharing",
+    "selectPeer": "Select peer to send to",
+    "noPeersConnected": "No peers connected",
+    "selectFile": "Select File",
+    "dragDrop": "Drag and drop files here or click to select",
+    "selectedFile": "Selected File",
+    "fileName": "File Name",
+    "fileSize": "Size",
+    "fileType": "Type",
+    "changeFile": "Select Different File",
+    "sendFile": "Send File",
+    "sending": "Sending...",
+    "selectPeerFirst": "Please select a peer first",
+    "selectFileFirst": "Please select a file first"
+  },
+  "fileProgress": {
+    "title": "File Transfer Progress",
+    "subtitle": "Real-time Transfer Monitoring",
+    "noTransfers": "No active transfers",
+    "receiving": "Receiving",
+    "sending": "Sending",
+    "completed": "Completed",
+    "failed": "Failed",
+    "from": "From",
+    "to": "To",
+    "fileName": "File Name",
+    "progress": "Progress",
+    "status": "Status",
+    "accept": "Accept",
+    "reject": "Reject",
+    "download": "Download",
+    "retry": "Retry"
+  },
+  "guide": {
+    "title": "Usage Guide",
+    "peerConnection": {
+      "title": "Peer Connection",
+      "step1": "Share your peer ID with the other party",
+      "step2": "Enter the other party's peer ID and name to connect",
+      "step3": "A green indicator will appear when connection is successful"
+    },
+    "fileTransfer": {
+      "title": "File Transfer",
+      "step1": "Select a connected peer",
+      "step2": "Select a file to transfer or drag and drop",
+      "step3": "Click the file transfer button",
+      "step4": "Transfer begins when the other party accepts"
+    },
+    "notice": {
+      "title": "Important Notice",
+      "content": "A TURN server may be required in firewall or NAT environments."
+    }
+  },
+  "footer": {
+    "madeWith": "Made with love using",
+    "experience": "Experience the new world of P2P file transfer",
+    "writtenBy": "Written by"
+  },
+  "notifications": {
+    "fileRequest": "wants to send you a file:",
+    "fileAccepted": "File transfer accepted",
+    "fileRejected": "File transfer rejected",
+    "fileCompleted": "File transfer completed",
+    "fileFailed": "File transfer failed"
+  },
+  "common": {
+    "bytes": "bytes",
+    "kb": "KB",
+    "mb": "MB",
+    "gb": "GB",
+    "cancel": "Cancel",
+    "close": "Close",
+    "ok": "OK",
+    "yes": "Yes",
+    "no": "No"
+  }
+}
