@@ -30,7 +30,22 @@
     "actions": "작업",
     "connectionSuccess": "피어 연결 성공!",
     "connectionError": "연결 실패:",
-    "disconnectSuccess": "피어 연결 해제됨"
+    "disconnectSuccess": "피어 연결 해제됨",
+    "guideTitle": "피어 연결 안내",
+    "guideConnectFirst": "먼저 피어를 연결해주세요.",
+    "guideInputPeerId": "다른 사용자의 피어 ID를 입력하여 연결하세요.",
+    "guideShowQr": "내 피어 ID를 QR 코드로 보여주어 쉽게 공유하세요.",
+    "qrModalTitle": "내 피어 ID QR 코드",
+    "qrCodeAlt": "QR 코드",
+    "qrGuide": "다른 사용자가 이 QR 코드를 스캔하여 연결할 수 있습니다",
+    "copyPeerId": "피어 ID 복사",
+    "qrScanTitle": "QR 코드 스캔",
+    "qrScanStart": "카메라를 시작하려면 스캔 버튼을 클릭하세요",
+    "qrScanPermission": "카메라 권한 허용이 필요합니다",
+    "qrScanStartBtn": "스캔 시작",
+    "qrScanOverlay": "QR 코드를\n여기에 맞춰주세요",
+    "qrScanManual": "수동 스캔",
+    "qrScanGuide": "다른 사용자의 피어 ID QR 코드를 스캔하여 연결하세요"
   },
   "fileTransfer": {
     "title": "파일 전송",
@@ -47,7 +62,15 @@
     "sendFile": "파일 전송",
     "sending": "전송 중...",
     "selectPeerFirst": "먼저 피어를 선택해주세요",
-    "selectFileFirst": "먼저 파일을 선택해주세요"
+    "selectFileFirst": "먼저 파일을 선택해주세요",
+    "guideConnectFirst": "먼저 피어를 연결해주세요",
+    "selectedFiles": "선택된 파일",
+    "countUnit": "개",
+    "receiver": "받는 사람",
+    "selectPeer": "피어를 선택하세요",
+    "noPeersToSend": "연결된 피어가 없어 파일을 보낼 수 없습니다.",
+    "send": "파일 전송하기",
+    "emptyState": "파일을 선택하면 전송을 시작할 수 있습니다"
   },
   "fileProgress": {
     "title": "파일 전송 진행 상황",
@@ -57,6 +80,7 @@
     "sending": "전송 중",
     "completed": "완료됨",
     "failed": "실패",
+    "waiting": "전송 대기 중",
     "from": "보낸이",
     "to": "받는이",
     "fileName": "파일명",
@@ -108,6 +132,11 @@
     "close": "닫기",
     "ok": "확인",
     "yes": "예",
-    "no": "아니오"
+    "no": "아니오",
+    "stop": "중지"
+  },
+  "locales": {
+    "en": "English",
+    "ko": "한국어"
   }
 }

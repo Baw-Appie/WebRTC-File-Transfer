@@ -22,7 +22,9 @@
           <div class="mx-auto mb-4 flex h-20 w-20 items-center justify-center rounded-full bg-gradient-to-br from-gray-100 to-gray-200">
             <UIcon name="i-heroicons-inbox" class="h-10 w-10 text-gray-400" />
           </div>
-          <h4 class="text-lg font-medium text-gray-900 mb-2">전송 대기 중</h4>
+          <h4 class="text-lg font-medium text-gray-900 mb-2">
+            {{ t('fileProgress.waiting') }}
+          </h4>
           <p class="text-sm text-gray-500">{{ t('fileProgress.noTransfers') }}</p>
         </div>
 

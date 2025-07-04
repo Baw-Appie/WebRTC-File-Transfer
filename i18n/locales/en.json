@@ -30,7 +30,22 @@
     "actions": "Actions",
     "connectionSuccess": "Peer connection successful!",
     "connectionError": "Connection failed:",
-    "disconnectSuccess": "Peer disconnected"
+    "disconnectSuccess": "Peer disconnected",
+    "guideTitle": "Peer Connection Guide",
+    "guideConnectFirst": "First, connect to a peer.",
+    "guideInputPeerId": "Enter another user's Peer ID to connect.",
+    "guideShowQr": "Show your Peer ID as a QR code for easy sharing.",
+    "qrModalTitle": "My Peer ID QR Code",
+    "qrCodeAlt": "QR Code",
+    "qrGuide": "Others can scan this QR code to connect to you.",
+    "copyPeerId": "Copy Peer ID",
+    "qrScanTitle": "Scan QR Code",
+    "qrScanStart": "Click the scan button to start the camera",
+    "qrScanPermission": "Camera permission is required",
+    "qrScanStartBtn": "Start Scan",
+    "qrScanOverlay": "Align the QR code here",
+    "qrScanManual": "Manual Scan",
+    "qrScanGuide": "Scan another user's Peer ID QR code to connect."
   },
   "fileTransfer": {
     "title": "File Transfer",
@@ -47,7 +62,15 @@
     "sendFile": "Send File",
     "sending": "Sending...",
     "selectPeerFirst": "Please select a peer first",
-    "selectFileFirst": "Please select a file first"
+    "selectFileFirst": "Please select a file first",
+    "guideConnectFirst": "Please connect to a peer first",
+    "selectedFiles": "Selected Files",
+    "countUnit": "",
+    "receiver": "Receiver",
+    "selectPeer": "Select a peer",
+    "noPeersToSend": "No connected peers to send files.",
+    "send": "Send Files",
+    "emptyState": "Select files to start sending."
   },
   "fileProgress": {
     "title": "File Transfer Progress",
@@ -57,6 +80,7 @@
     "sending": "Sending",
     "completed": "Completed",
     "failed": "Failed",
+    "waiting": "Waiting for transfer",
     "from": "From",
     "to": "To",
     "fileName": "File Name",
@@ -108,6 +132,11 @@
     "close": "Close",
     "ok": "OK",
     "yes": "Yes",
-    "no": "No"
+    "no": "No",
+    "stop": "Stop"
+  },
+  "locales": {
+    "en": "English",
+    "ko": "한국어"
   }
 }

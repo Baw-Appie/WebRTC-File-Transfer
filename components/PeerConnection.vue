@@ -189,24 +189,24 @@
             <UIcon name="i-heroicons-user-group" class="h-8 w-8 text-gray-400" />
           </div>
           <p class="text-sm font-medium text-gray-700 mb-1">{{ t('peerConnection.noPeers') }}</p>
-          <p class="text-xs text-gray-500">다른 사용자의 피어 ID를 입력하여 연결하세요</p>
+          <p class="text-xs text-gray-500">{{ t('peerConnection.guideInputPeerId') }}</p>
         </div>
       </div>
     </div>
 
     <!-- QR 코드 표시 모달 -->
-    <UModal v-model:open="showQRModal" title="내 피어 ID QR 코드">
+    <UModal v-model:open="showQRModal" :title="t('peerConnection.qrModalTitle')">
       <template #body>
         <div class="text-center">
           <div class="flex justify-center mb-4">
             <div v-if="qrCodeDataUrl" class="bg-white p-4 rounded-lg shadow-inner">
-              <img :src="qrCodeDataUrl" alt="QR Code" class="w-48 h-48" />
+              <img :src="qrCodeDataUrl" :alt="t('peerConnection.qrCodeAlt')" class="w-48 h-48" />
             </div>
             <div v-else class="w-48 h-48 bg-gray-100 rounded-lg flex items-center justify-center">
               <UIcon name="i-heroicons-arrow-path" class="h-8 w-8 animate-spin text-gray-400" />
             </div>
           </div>
-          <p class="text-sm text-gray-600">다른 사용자가 이 QR 코드를 스캔하여 연결할 수 있습니다</p>
+          <p class="text-sm text-gray-600">{{ t('peerConnection.qrGuide') }}</p>
         </div>
       </template>
       
@@ -217,20 +217,20 @@
             variant="outline"
             @click="showQRModal = false"
           >
-            닫기
+            {{ t('common.close') }}
           </UButton>
           <UButton
             color="primary"
             @click="copyPeerId"
           >
-            피어 ID 복사
+            {{ t('peerConnection.copyPeerId') }}
           </UButton>
         </div>
       </template>
     </UModal>
 
     <!-- QR 코드 스캔 모달 -->
-    <UModal v-model:open="showScanModal" title="QR 코드 스캔">
+    <UModal v-model:open="showScanModal" :title="t('peerConnection.qrScanTitle')">
       <template #body>
         <div class="text-center">
           <div class="mb-4">
@@ -238,8 +238,8 @@
               <div class="w-full h-64 bg-gray-100 rounded-lg flex items-center justify-center border-2 border-dashed border-gray-300">
                 <div class="text-center">
                   <UIcon name="i-heroicons-camera" class="h-12 w-12 mx-auto mb-2 text-gray-400" />
-                  <p class="text-sm text-gray-600">카메라를 시작하려면 스캔 버튼을 클릭하세요</p>
-                  <p class="text-xs text-gray-500 mt-1">카메라 권한 허용이 필요합니다</p>
+                  <p class="text-sm text-gray-600">{{ t('peerConnection.qrScanStart') }}</p>
+                  <p class="text-xs text-gray-500 mt-1">{{ t('peerConnection.qrScanPermission') }}</p>
                 </div>
               </div>
               <UButton
@@ -249,7 +249,7 @@
                 :loading="isScanning"
               >
                 <UIcon name="i-heroicons-camera" class="mr-2 h-4 w-4" />
-                스캔 시작
+                {{ t('peerConnection.qrScanStartBtn') }}
               </UButton>
             </div>
             
@@ -266,7 +266,7 @@
                 <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
                   <div class="w-32 h-32 border-2 border-white border-dashed rounded-lg bg-black/20 backdrop-blur-sm flex items-center justify-center">
                     <div class="text-white text-xs text-center">
-                      QR 코드를<br>여기에 맞춰주세요
+                      {{ t('peerConnection.qrScanOverlay') }}
                     </div>
                   </div>
                 </div>
@@ -282,20 +282,20 @@
                   @click="stopScanning"
                   class="flex-1"
                 >
-                  중지
+                  {{ t('common.stop') }}
                 </UButton>
                 <UButton
                   color="primary"
                   @click="() => captureAndScan(true)"
                   class="flex-1"
                 >
-                  수동 스캔
+                  {{ t('peerConnection.qrScanManual') }}
                 </UButton>
               </div>
             </div>
           </div>
           
-          <p class="text-sm text-gray-600">다른 사용자의 피어 ID QR 코드를 스캔하여 연결하세요</p>
+          <p class="text-sm text-gray-600">{{ t('peerConnection.qrScanGuide') }}</p>
         </div>
       </template>
       
@@ -306,7 +306,7 @@
             variant="outline"
             @click="closeScanModal"
           >
-            닫기
+            {{ t('common.close') }}
           </UButton>
         </div>
       </template>

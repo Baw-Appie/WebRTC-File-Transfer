@@ -58,7 +58,7 @@
             <div class="text-center">
               <UIcon name="i-heroicons-wifi-slash" class="mx-auto mb-2 h-8 w-8 text-red-500" />
               <p class="text-sm font-medium text-red-700">{{ t('fileTransfer.noPeersConnected') }}</p>
-              <p class="text-xs text-red-600">먼저 피어를 연결해주세요</p>
+              <p class="text-xs text-red-600">{{ t('fileTransfer.guideConnectFirst') }}</p>
             </div>
           </div>
         </div>
@@ -67,7 +67,7 @@
         <div v-if="selectedFiles.length > 0" class="space-y-4">
           <div class="flex items-center gap-2">
             <UIcon name="i-heroicons-document-duplicate" class="h-4 w-4 text-gray-500" />
-            <h4 class="text-sm font-semibold text-gray-800">선택된 파일 ({{ selectedFiles.length }}개)</h4>
+            <h4 class="text-sm font-semibold text-gray-800">{{ t('fileTransfer.selectedFiles') }} ({{ selectedFiles.length }}{{ t('fileTransfer.countUnit') }})</h4>
           </div>
           
           <div class="max-h-48 space-y-2 overflow-y-auto">
@@ -101,13 +101,13 @@
           <div class="space-y-3">
             <div class="flex items-center gap-2">
               <UIcon name="i-heroicons-user-group" class="h-4 w-4 text-gray-500" />
-              <h4 class="text-sm font-semibold text-gray-800">받는 사람</h4>
+              <h4 class="text-sm font-semibold text-gray-800">{{ t('fileTransfer.receiver') }}</h4>
             </div>
             
             <USelect
               v-model="selectedPeerId"
               :items="peerOptions"
-              placeholder="피어를 선택하세요"
+              :placeholder="t('fileTransfer.selectPeer')"
               value-key="value"
               class="w-full"
               size="lg"
@@ -119,7 +119,7 @@
             
             <!-- 피어 목록이 비어있을 때 표시 -->
             <div v-if="peerOptions.length === 0" class="text-sm text-red-600 bg-red-50 p-2 rounded">
-              ⚠️ 연결된 피어가 없어 파일을 보낼 수 없습니다.
+              ⚠️ {{ t('fileTransfer.noPeersToSend') }}
             </div>
           </div>
 
@@ -135,11 +135,11 @@
           >
             <template v-if="!isSending">
               <UIcon name="i-heroicons-paper-airplane" class="mr-2 h-4 w-4" />
-              파일 전송하기
+              {{ t('fileTransfer.send') }}
             </template>
             <template v-else>
               <UIcon name="i-heroicons-arrow-path" class="mr-2 h-4 w-4 animate-spin" />
-              전송 중...
+              {{ t('fileTransfer.sending') }}
             </template>
           </UButton>
         </div>
@@ -149,7 +149,7 @@
           <div class="mx-auto mb-3 h-12 w-12 rounded-full bg-gray-100 flex items-center justify-center">
             <UIcon name="i-heroicons-document" class="h-6 w-6 text-gray-400" />
           </div>
-          <p class="text-sm text-gray-500">파일을 선택하면 전송을 시작할 수 있습니다</p>
+          <p class="text-sm text-gray-500">{{ t('fileTransfer.emptyState') }}</p>
         </div>
       </div>
     </div>

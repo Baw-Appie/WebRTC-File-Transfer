@@ -38,19 +38,36 @@
           <div class="lg:col-span-1 space-y-6">
             <PeerConnection />
 
+            <!-- 안내 카드 -->
+            <div class="rounded-xl bg-gradient-to-br from-blue-50 to-purple-50 p-4 shadow ring-1 ring-blue-100 mb-2">
+              <div class="flex items-center gap-2 mb-2">
+                <UIcon name="i-heroicons-information-circle" class="h-5 w-5 text-blue-500" />
+                <span class="font-semibold text-blue-700">{{ t('peerConnection.guideTitle') }}</span>
+              </div>
+              <ul class="text-sm text-blue-700 ml-7 list-disc space-y-1">
+                <li>{{ t('peerConnection.guideConnectFirst') }}</li>
+                <li>{{ t('peerConnection.guideInputPeerId') }}</li>
+                <li>{{ t('peerConnection.guideShowQr') }}</li>
+              </ul>
+            </div>
+
             <!-- 통계 카드 -->
             <!-- <div class="grid grid-cols-2 gap-3">
               <div class="rounded-xl bg-white p-4 shadow-lg ring-1 ring-gray-200">
                 <div class="flex items-center gap-2">
                   <UIcon name="i-heroicons-users" class="h-4 w-4 text-blue-500" />
-                  <p class="text-xs font-medium text-gray-600">연결된 피어</p>
+                  <p class="text-xs font-medium text-gray-600">
+                    {{ t('peerConnection.connectedPeers') }}
+                  </p>
                 </div>
                 <p class="text-2xl font-bold text-gray-900">0</p>
               </div>
               <div class="rounded-xl bg-white p-4 shadow-lg ring-1 ring-gray-200">
                 <div class="flex items-center gap-2">
                   <UIcon name="i-heroicons-arrow-up-tray" class="h-4 w-4 text-green-500" />
-                  <p class="text-xs font-medium text-gray-600">전송 완료</p>
+                  <p class="text-xs font-medium text-gray-600">
+                    {{ t('peerConnection.transfersCompleted') }}
+                  </p>
                 </div>
                 <p class="text-2xl font-bold text-gray-900">0</p>
               </div>
